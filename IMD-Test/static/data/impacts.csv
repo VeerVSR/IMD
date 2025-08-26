@@ -1,0 +1,102 @@
+Heavy Rain,Urban Flooding
+Heavy Rain,Landslides
+Heavy Rain,Crop Damage
+Heavy Rain,Power Ourage
+Heavy Rain,Disease spread
+Heavy Rain,Transport Disruption 
+Very Heavy Rain,Urban Flooding
+Very Heavy Rain,Landslides
+Very Heavy Rain,River overflow and Flash floods
+Very Heavy Rain,Transport disruption 
+Very Heavy Rain,Crop damage 
+Very Heavy Rain,Spread of waterborne diseases 
+Extremely Heavy Rain,Widespread flooding 
+Extremely Heavy Rain,Major river overflows 
+Extremely Heavy Rain,Massive landslides 
+Extremely Heavy Rain,Collapse of weak structures 
+Extremely Heavy Rain,Large-scale evacuation needs 
+Extremely Heavy Rain,Health hazards
+Heavy Snow,Road blockages 
+Heavy Snow,Flight and train cancellations 
+Heavy Snow,Power outages 
+Heavy Snow,Increased risk of avalanches 
+Heavy Snow,Collapse of roofs and weak structures 
+Heavy Snow,Health hazards
+Thunderstorm & Lightning,Injury or death due to direct lightning strikes 
+Thunderstorm & Lightning,Damage to electrical appliances 
+Thunderstorm & Lightning,Fallen trees and poles 
+Thunderstorm & Lightning,Fires triggered by lightning 
+Thunderstorm & Lightning,Flight and train delays 
+Thunderstorm & Lightning,Interruption of communication networks 
+Hailstorm,Severe damage to crops 
+Hailstorm,Broken windows
+Hailstorm,Injury to humans and animals 
+Hailstorm,Power outages and communication failures
+Hailstorm,Flight disruptions
+Hailstorm,Traffic accidents 
+Dust Storm,Reduced visibility 
+Dust Storm,Respiratory problems 
+Dust Storm,Damage to crops
+Dust Storm,Disruption of power 
+Dust Storm,Sand accumulation
+Dust Storm,Flight cancellations and diversions 
+Dust Raising Winds,Reduced visibility
+Dust Raising Winds,Breathing difficulties 
+Dust Raising Winds,Minor crop damage
+Dust Raising Winds,Dust accumulation 
+Dust Raising Winds,Eye irritation 
+Dust Raising Winds,Disruption of outdoor activities and transport services
+Strong Surface Winds,Uprooting of trees and poles 
+Strong Surface Winds,Disruption to road
+Strong Surface Winds,Damage to temporary structures
+Strong Surface Winds,Increased fire risk 
+Strong Surface Winds,Power outages 
+Strong Surface Winds,Hazards to construction sites
+Heat Wave,Increased risk of heat-related illnesses 
+Heat Wave,Higher mortality rates
+Heat Wave,Reduced productivity 
+Heat Wave,Crop withering and water stress 
+Heat Wave,Increased energy demand
+Heat Wave,Water scarcity and drying of water bodies
+Hot Day,Mild dehydration and fatigue
+Hot Day,Discomfort and reduced concentration 
+Hot Day,Increased electricity usage 
+Hot Day,Minor crop stress 
+Hot Day,Health issues for vulnerable groups 
+Hot Day,Rise in indoor temperatures
+Hot and Humid,Increased risk of heat exhaustion and dehydration 
+Hot and Humid,Reduced effectiveness of sweating 
+Hot and Humid,Higher discomfort levels 
+Hot and Humid,Aggravation of respiratory problems 
+Hot and Humid,Skin issues 
+Hot and Humid,Greater demand for cooling appliances
+Warm Night,Disrupted sleep quality 
+Warm Night,Increased risk of heat stress
+Warm Night,Reduced nighttime cooling
+Warm Night,Higher electricity consumption 
+Warm Night,Increased discomfort and fatigue
+Warm Night,Prolonged heat exposure 
+Cold Day,Reduced work efficiency and outdoor activity 
+Cold Day,Increased risk of hypothermia and frostbite 
+Cold Day,Worsening of respiratory and cardiac conditions 
+Cold Day,Disruption in transport and public services 
+Cold Day,Higher energy demand 
+Cold Day,Adverse effects on crops
+Cold Wave,Increased risk of hypothermia and frostbite
+Cold Wave,Rise in cold-related illnesses 
+Cold Wave,Higher mortality rates 
+Cold Wave,Disruption of transportation 
+Cold Wave,Damage to crops and livestock 
+Cold Wave,Increased energy consumption 
+Ground Frost,Damage to crops and seedlings 
+Ground Frost,Formation of slippery surfaces
+Ground Frost,Reduced soil fertility 
+Ground Frost,Freezing of water pipes 
+Ground Frost,Disruption to early morning transport 
+Ground Frost,Stress on small animals and livestock 
+Fog,Reduced visibility
+Fog,Disruption of daily commutes 
+Fog,Increased risk of multi-vehicle collisions
+Fog,Delays and diversions of flights and trains 
+Fog,Health problems 
+Fog,Moisture accumulation on roads and surfaces
