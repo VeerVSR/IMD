@@ -94,34 +94,35 @@ Here's a breakdown of the key files and directories in the project:
 
 <details>
 <summary>Click to expand project structure</summary>
-    └── IMD-Final/
-    ├── app.py # Main Flask backend application
+
+```text
+└── IMD-Final/
+    ├── app.py                      # Main Flask backend application
     ├── IMPACTS AND SAFTEY MEASURES FOR WARNINGS.docx
-    ├── conf/ # Nginx configuration files
-    │ └── nginx.conf
-    ├── contrib/ # Contributed scripts and utilities (e.g., for Vim)
-    ├── database.xlsx # Data storage for the application
-    ├── docs/ # Project documentation and licenses
-    │ └── README.md
-    ├── html/ # Web root directory
-    │ ├── imd/
-    │ │ ├── index.html # Main frontend HTML file
-    │ │ ├── script.js # Core JavaScript for map interaction
-    │ │ ├── styles.css # CSS styles for the frontend
-    │ │ ├── data/ # Geospatial data (GeoJSON, shapefiles)
-    │ │ ├── icons/ # Weather event icons
-    │ │ ├── libs/ # JavaScript/CSS libraries (Leaflet.js)
-    │ │ └── processed/ # Output location for generated reports and maps
-    │ ├── generate.php # PHP script for DOCX/PDF report generation
-    │ ├── vendor/ # PHP dependencies (PHPWord, FPDF)
-    │ └── uploads/ # Directory for user-uploaded files
-    ├── intersection_map.py # Python script for geospatial analysis
-    ├── fetch_latest_geojson.py # Script to fetch latest IMD warning data
-    ├── logs/ # Access and error logs for Nginx
-    ├── nginx.exe # Nginx executable
-    └── ... # Other supporting files and executables
-</details>
----
+    ├── conf/                       # Nginx configuration files
+    │   └── nginx.conf
+    ├── contrib/                    # Contributed scripts and utilities (e.g., for Vim)
+    ├── database.xlsx               # Data storage for the application
+    ├── docs/                       # Project documentation and licenses
+    │   └── README.md
+    ├── html/                       # Web root directory
+    │   ├── imd/
+    │   │   ├── index.html          # Main frontend HTML file
+    │   │   ├── script.js           # Core JavaScript for map interaction
+    │   │   ├── styles.css          # CSS styles for the frontend
+    │   │   ├── data/               # Geospatial data (GeoJSON, shapefiles)
+    │   │   ├── icons/              # Weather event icons
+    │   │   ├── libs/               # JavaScript/CSS libraries (Leaflet.js)
+    │   │   └── processed/          # Output location for generated reports and maps
+    │   ├── generate.php            # PHP script for DOCX/PDF report generation
+    │   ├── vendor/                 # PHP dependencies (PHPWord, FPDF)
+    │   └── uploads/                # Directory for user-uploaded files
+    ├── intersection_map.py         # Python script for geospatial analysis
+    ├── fetch_latest_geojson.py     # Script to fetch latest IMD warning data
+    ├── logs/                       # Access and error logs for Nginx
+    ├── nginx.exe                   # Nginx executable
+    └── ...                         # Other supporting files and executables
+</details> ```
 
 ## ⚙️ How It Works
 
