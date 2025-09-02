@@ -91,3 +91,36 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## 📂 Project Structure
 
 Here's a breakdown of the key files and directories in the project:
+└── IMD-Final/
+├── app.py                      # Main Flask backend application
+├── intersection_map.py         # Python script for geospatial analysis
+├── fetch_latest_geojson.py     # Script to fetch IMD warning data
+├── html/
+│   ├── imd/
+│   │   ├── index.html          # Main frontend HTML file
+│   │   ├── script.js           # Core frontend JavaScript logic
+│   │   ├── styles.css          # CSS styles for the frontend
+│   │   └── data/               # GeoJSON, shapefiles, and processed data
+│   ├── generate.php            # PHP script for DOCX/PDF report generation
+│   └── vendor/                 # PHP dependencies (PHPWord, FPDF)
+├── conf/
+│   └── nginx.conf              # Nginx server configuration
+├── database.xlsx               # Excel-based data store
+└── ...                         # Other configuration and log files
+
+---
+
+## ⚙️ How It Works
+
+1.  **Data Fetching**: The `fetch_latest_geojson.py` script runs periodically to download the latest weather warning data from the IMD source.
+2.  **Backend API**: The Flask `app.py` serves as the backend API. It handles requests for data processing, such as running the geospatial intersection logic from `intersection_map.py`.
+3.  **Frontend Visualization**: The user interacts with `index.html`, which uses `script.js` and Leaflet.js to render the map. It loads district boundaries and overlays the fetched weather warnings.
+4.  **User Interaction**: The user can draw custom polygons on the map. This user-drawn GeoJSON is sent to the Flask backend.
+5.  **Analysis**: The backend determines the intersection between the warning polygons (either fetched or user-drawn) and the district boundaries of Punjab and Haryana.
+6.  **Report Generation**: When a report is requested, the processed data is sent to `generate.php`. This script uses the **PHPWord** and **FPDF** libraries to create and serve a downloadable DOCX or PDF file summarizing the warnings and affected areas.
+
+---
+
+## 📜 License
+
+This project is distributed under the MIT License. See `docs/LICENSE` for more information.
