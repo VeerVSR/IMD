@@ -1,126 +1,93 @@
-IMD Weather Warning & Analysis Tool
+# IMD Weather Warning & Analysis Tool
+
+![IMD-Final-Map-Visualization](https://raw.githubusercontent.com/VeerVSR/IMD/master/IMD-Final/html/imd/complete_map.png)
+
 This project is a comprehensive web-based tool designed to fetch, visualize, and analyze weather warnings from the India Meteorological Department (IMD). It provides an interactive map interface to overlay weather warning polygons on district maps of Punjab and Haryana, identify affected areas, and generate detailed reports in both PDF and DOCX formats.
 
-✨ Features
-🛰️ Real-time Data Fetching: Automatically fetches the latest weather warning data in GeoJSON format.
+---
 
-🗺️ Interactive Map Interface: Utilizes Leaflet.js to display an interactive map with tools for drawing and editing custom polygonal areas.
+## ✨ Features
 
-🌍 Geospatial Analysis: Performs intersection analysis between weather warning polygons and district boundaries to pinpoint affected regions.
+* **🛰️ Real-time Data Fetching**: Automatically fetches the latest weather warning data in GeoJSON format.
+* **🗺️ Interactive Map Interface**: Utilizes Leaflet.js to display an interactive map with tools for drawing and editing custom polygonal areas.
+* **🌍 Geospatial Analysis**: Performs intersection analysis between weather warning polygons and district boundaries to pinpoint affected regions.
+* **📊 Dynamic Visualization**: Color-codes affected districts on the map and displays detailed warning information in a structured table.
+* **📄 Report Generation**: Dynamically generates and allows users to download comprehensive analysis reports in **PDF** and **DOCX** formats using PHP.
+* **🚀 Robust Backend**: Powered by a lightweight Flask backend to handle data processing and API requests.
+* **⚙️ High-Performance Serving**: Served using Nginx for efficient and reliable performance.
 
-📊 Dynamic Visualization: Color-codes affected districts on the map and displays detailed warning information in a structured table.
+---
 
-📄 Report Generation: Dynamically generates and allows users to download comprehensive analysis reports in PDF and DOCX formats using PHP.
+## 🛠️ Technology Stack
 
-🚀 Robust Backend: Powered by a lightweight Flask backend to handle data processing and API requests.
+| Category      | Technology                                                                                                    |
+|---------------|---------------------------------------------------------------------------------------------------------------|
+| **Backend** | ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white) |
+| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) |
+| **Mapping** | ![Leaflet](https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=Leaflet&logoColor=white)         |
+| **Server** | ![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)               |
+| **Doc Gen** | ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white) (PHPWord, FPDF)       |
+| **Data** | GeoJSON, Microsoft Excel                                                                                      |
 
-⚙️ High-Performance Serving: Served using Nginx for efficient and reliable performance.
+---
 
-🛠️ Technology Stack
-Category	Technology
-Backend	
-Frontend	
-Mapping	
-Server	
-Doc Gen	(PHPWord, FPDF)
-Data	GeoJSON, Microsoft Excel
+## 🚀 Getting Started
 
-Export to Sheets
-🚀 Getting Started
 Follow these instructions to get a copy of the project up and running on your local machine.
 
-Prerequisites
-Python 3.8+ and Pip
+### Prerequisites
 
-Nginx
+* Python 3.8+ and Pip
+* Nginx
+* PHP and Composer
 
-PHP and Composer
+### Installation
 
-Installation
-Clone the repository:
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/your-username/IMD-Final.git](https://github.com/your-username/IMD-Final.git)
+    cd IMD-Final
+    ```
 
-Bash
+2.  **Set up the Python Backend:**
+    * Create and activate a virtual environment:
+        ```sh
+        # For Windows
+        python -m venv venv
+        .\venv\Scripts\activate
 
-git clone https://github.com/your-username/IMD-Final.git
-cd IMD-Final
-Set up the Python Backend:
+        # For macOS/Linux
+        python3 -m venv venv
+        source venv/bin/activate
+        ```
+    * Install the required Python packages:
+        ```sh
+        pip install Flask Flask-Cors
+        ```
+        *(Note: A `requirements.txt` file should be created for easier dependency management.)*
 
-Create and activate a virtual environment:
+3.  **Set up the PHP Dependencies:**
+    * Navigate to the `html` directory and install Composer packages:
+        ```sh
+        cd html
+        composer install
+        ```
 
-Bash
+4.  **Configure Nginx:**
+    * Open the `conf/nginx.conf` file.
+    * Ensure the `root` directive points to the `html` directory inside your project folder.
+    * Configure the `location` blocks to correctly handle requests for PHP files and the Flask backend API.
+    * Start the Nginx server by running `nginx.exe`.
 
-# For Windows
-python -m venv venv
-.\venv\Scripts\activate
+5.  **Run the Application:**
+    * Start the Flask backend server:
+        ```sh
+        python app.py
+        ```
+    * Open your web browser and navigate to the address configured in your Nginx setup (e.g., `http://localhost`).
 
-# For macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-Install the required Python packages:
+---
 
-Bash
+## 📂 Project Structure
 
-pip install Flask Flask-Cors
-(Note: A requirements.txt file should be created for easier dependency management.)
-
-Set up the PHP Dependencies:
-
-Navigate to the html directory and install Composer packages:
-
-Bash
-
-cd html
-composer install
-Configure Nginx:
-
-Open the conf/nginx.conf file.
-
-Ensure the root directive points to the html directory inside your project folder.
-
-Configure the location blocks to correctly handle requests for PHP files and the Flask backend API.
-
-Start the Nginx server by running nginx.exe.
-
-Run the Application:
-
-Start the Flask backend server:
-
-Bash
-
-python app.py
-Open your web browser and navigate to the address configured in your Nginx setup (e.g., http://localhost).
-
-📂 Project Structure
 Here's a breakdown of the key files and directories in the project:
-
-└── IMD-Final/
-    ├── app.py                      # Main Flask backend application
-    ├── intersection_map.py         # Python script for geospatial analysis
-    ├── fetch_latest_geojson.py     # Script to fetch IMD warning data
-    ├── html/
-    │   ├── imd/
-    │   │   ├── index.html          # Main frontend HTML file
-    │   │   ├── script.js           # Core frontend JavaScript logic
-    │   │   ├── styles.css          # CSS styles for the frontend
-    │   │   └── data/               # GeoJSON, shapefiles, and processed data
-    │   ├── generate.php            # PHP script for DOCX/PDF report generation
-    │   └── vendor/                 # PHP dependencies (PHPWord, FPDF)
-    ├── conf/
-    │   └── nginx.conf              # Nginx server configuration
-    ├── database.xlsx               # Excel-based data store
-    └── ...                         # Other configuration and log files
-⚙️ How It Works
-Data Fetching: The fetch_latest_geojson.py script runs periodically to download the latest weather warning data from the IMD source.
-
-Backend API: The Flask app.py serves as the backend API. It handles requests for data processing, such as running the geospatial intersection logic from intersection_map.py.
-
-Frontend Visualization: The user interacts with index.html, which uses script.js and Leaflet.js to render the map. It loads district boundaries and overlays the fetched weather warnings.
-
-User Interaction: The user can draw custom polygons on the map. This user-drawn GeoJSON is sent to the Flask backend.
-
-Analysis: The backend determines the intersection between the warning polygons (either fetched or user-drawn) and the district boundaries of Punjab and Haryana.
-
-Report Generation: When a report is requested, the processed data is sent to generate.php. This script uses the PHPWord and FPDF libraries to create and serve a downloadable DOCX or PDF file summarizing the warnings and affected areas.
-
-📜 License
-This project is distributed under the MIT License. See docs/LICENSE for more information.
