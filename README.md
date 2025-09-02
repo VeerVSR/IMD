@@ -91,10 +91,6 @@ Follow these instructions to get a copy of the project up and running on your lo
 ## 📂 Project Structure
 
 Here's a breakdown of the key files and directories in the project:
-
-<details>
-<summary>Click to expand project structure</summary>
-
 ```text
 └── IMD-Final/
     ├── app.py                      # Main Flask backend application
@@ -122,7 +118,7 @@ Here's a breakdown of the key files and directories in the project:
     ├── logs/                       # Access and error logs for Nginx
     ├── nginx.exe                   # Nginx executable
     └── ...                         # Other supporting files and executables
-</details> ```
+```
 
 ## ⚙️ How It Works
 
