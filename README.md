@@ -133,4 +133,4 @@ Here's a breakdown of the key files and directories in the project:
 
 ## 📜 License
 
-This project is distributed under the MIT License. See `docs/LICENSE` for more information.
+This project is distributed under the MIT License. See `LICENSE` for more information.
